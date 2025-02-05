@@ -107,7 +107,7 @@ export function SearchForm() {
           maxLength={MAX_QUERY_LENGTH}
           placeholder="Search for a show..."
           autoComplete="off"
-          className="pl-10 flex-1 min-w-[450px] h-12"
+          className="pl-10 flex-1 md:min-w-[450px] h-12"
         />
         <Loading query={query} />
         <button type="submit" className="hidden">
