@@ -1,0 +1,50 @@
+{
+  "name": "netflix-but-better",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "tsx lib/db/migrate.ts",
+    "ai:embed": "tsx lib/ai/embed.ts",
+    "ai:search-terms": "tsx lib/ai/search-terms.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/mistral": "^1.1.1",
+    "@ai-sdk/openai": "^1.1.0",
+    "@libsql/client": "^0.14.0",
+    "@neondatabase/serverless": "^0.10.4",
+    "@phosphor-icons/react": "^2.1.7",
+    "@radix-ui/react-slot": "^1.1.1",
+    "ai": "^4.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.4",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.473.0",
+    "next": "15.1.6",
+    "nuqs": "^2.3.1",
+    "ollama-ai-provider": "^1.2.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tsx": "^4.19.2",
+    "use-debounce": "^10.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "drizzle-kit": "^0.30.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

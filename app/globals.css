@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  font-family: var(--font-geist-sans);
+}
+
+@layer base {
+  :root {
+    --netflix-primary: 357, 92%, 47%;
+    --netflix-secondary: 0, 5%, 13%;
+    --netflix-tertiary: 60, 17%, 95%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
